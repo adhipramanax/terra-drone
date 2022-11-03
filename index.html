@@ -13,16 +13,13 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link
-      href="https://raw.githubusercontent.com/koehlersimon/bootstrap-videoplayer/master/favicon.ico"
-      rel="shortcut icon"
-    />
+    <link href="./favicon.ico " rel="shortcut icon" />
     <link href="dist/css/videoplayer.min.css" rel="stylesheet" />
     <link href="source/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/style/style.css" />
   </head>
   <body>
-    <div class="container mt-2 back">
+    <div class="container-sm mt-2">
       <div class="toast position-fixed bottom-0 start-0 p-3" id="myToast" style="z-index: 50">
         <!-- <div class="position-fixed"> -->
         <div class="toast-header" style="z-index: 11; right: 0">
@@ -37,10 +34,10 @@
         <!-- </div> -->
       </div>
       <div class="d-flex gap-3">
-        <div class="w-50">
+        <div class=" " style="width: 70%">
           <section class="mb-2">
-            <div class="text-center bg-danger">
-              <h3>VIDEO</h3>
+            <div class="text-center back">
+              <h3 class="text-light">VIDEO</h3>
             </div>
             <!-- Video Player START -->
             <div class="videoplayer" id="player-1">
@@ -99,13 +96,13 @@
             <!-- Video Player END -->
           </section>
           <section class="mb-3">
-            <div class="text-center bg-danger">
-              <h3>Configuration</h3>
+            <div class="text-center back">
+              <h3 class="text-light">Configuration</h3>
             </div>
-            <div class="bg-light p-2 rounded-3">
+            <div class="back-light p-2 rounded-3">
               <form class="inputan d-flex gap-2 flex-column">
                 <div class="input-group">
-                  <div class="w-25">
+                  <div class="w-50">
                     <label class="input-group-text" for="inputGroupSelect01">Data Type</label>
                   </div>
                   <select class="form-select" id="inputGroupSelect01">
@@ -116,10 +113,10 @@
                   </select>
                 </div>
                 <div class="d-flex w-100">
-                  <div class="w-25">
+                  <div class="w-50">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Data Path</span>
                   </div>
-                  <div class="w-75">
+                  <div class="w-50">
                     <input
                       type="text"
                       class="form-control"
@@ -130,7 +127,7 @@
                   </div>
                 </div>
                 <div class="input-group">
-                  <div class="w-25">
+                  <div class="w-50">
                     <label class="input-group-text" for="inputGroupSelect01"
                       >Device Inference</label
                     >
@@ -143,12 +140,12 @@
                   </select>
                 </div>
                 <div class="d-flex w-100">
-                  <div class="w-25">
+                  <div class="w-50">
                     <span class="input-group-text" id="inputGroup-sizing-sm"
-                      >Jump_timestap_sec</span
+                      >Jump_timestap_seconds</span
                     >
                   </div>
-                  <div class="w-75">
+                  <div class="w-50">
                     <input
                       type="text"
                       class="form-control"
@@ -160,10 +157,10 @@
                 </div>
 
                 <div class="d-flex w-100">
-                  <div class="w-25">
+                  <div class="w-50">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Weight_od</span>
                   </div>
-                  <div class="w-75">
+                  <div class="w-50">
                     <input
                       type="text"
                       class="form-control"
@@ -175,10 +172,10 @@
                 </div>
 
                 <div class="d-flex w-100">
-                  <div class="w-25">
+                  <div class="w-50">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Weight_ot</span>
                   </div>
-                  <div class="w-75">
+                  <div class="w-50">
                     <input
                       type="text"
                       class="form-control"
@@ -189,21 +186,51 @@
                   </div>
                 </div>
                 <div class="d-flex w-100">
-                  <div class="w-25">
+                  <div class="w-50">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Weight_ocr</span>
                   </div>
-                  <div class="w-75">
+                  <div class="w-50">
                     <input
                       type="text"
                       class="form-control"
                       placeholder="Input String"
                       aria-label="Input String"
                       aria-describedby="basic-addon1"
+                    />
+                  </div>
+                </div>
+                <div class="d-flex w-100">
+                  <div class="w-50">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">saved_results</span>
+                  </div>
+                  <div class="w-50">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Input String"
+                      aria-label="Input String"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                </div>
+                <div class="d-flex w-100">
+                  <div class="w-50">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Confidence_od</span>
+                  </div>
+                  <div class="w-50">
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Input Number"
+                      aria-label="Input Number"
+                      aria-describedby="basic-addon1"
+                      min="0"
+                      max="1"
                     />
                   </div>
                 </div>
                 <div class="input-group">
-                  <div class="w-25">
+                  <div class="w-50">
                     <label class="input-group-text" for="inputGroupSelect01"
                       >Use_all_class_od</label
                     >
@@ -215,10 +242,10 @@
                   </select>
                 </div>
                 <div class="d-flex w-100">
-                  <div class="w-25">
+                  <div class="w-50">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Max_age</span>
                   </div>
-                  <div class="w-75">
+                  <div class="w-50">
                     <input
                       type="number"
                       class="form-control"
@@ -229,10 +256,10 @@
                   </div>
                 </div>
                 <div class="d-flex w-100">
-                  <div class="w-25">
+                  <div class="w-50">
                     <span class="input-group-text" id="inputGroup-sizing-sm">n_init_tracking</span>
                   </div>
-                  <div class="w-75">
+                  <div class="w-50">
                     <input
                       type="number"
                       class="form-control"
@@ -243,10 +270,10 @@
                   </div>
                 </div>
                 <div class="d-flex w-100">
-                  <div class="w-25">
+                  <div class="w-50">
                     <span class="input-group-text" id="inputGroup-sizing-sm">n_init_suspect</span>
                   </div>
-                  <div class="w-75">
+                  <div class="w-50">
                     <input
                       type="number"
                       class="form-control"
@@ -256,40 +283,190 @@
                     />
                   </div>
                 </div>
-                <button type="button" class="btn btn-primary">Start Perdict</button>
+                <button type="button" class="btn btn-dark">Start Perdict</button>
               </form>
             </div>
           </section>
         </div>
-        <section class="w-50 bg-light p-2 rounded-3" style="height: 95vh">
-          <div class="text-center bg-danger">
-            <h3>RESULT</h3>
+        <section class="back-light p-2 rounded-3" style="width: 30%">
+          <div class="text-center back">
+            <h3 class="text-light">RESULT</h3>
           </div>
-          <!-- card -->
-          <button
-            class="card mb-3 w-100"
-            type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            <div class="row g-0">
-              <div class="col-md-3 d-flex justify-content-center">
-                <img
-                  src="./assets/images/tera-drone.png"
-                  class="img-thumbnail rounded-start"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-9">
-                <div class="card-body d-flex align-items-start flex-column">
-                  <h5 class="card-title">Suspect ID:0</h5>
-                  <p class="card-text">Suspect Truck - Truck</p>
-                  <p class="card-text">Thursday 13/10/2002 - 14.22</p>
+          <div class="overflow-auto" style="height: 1000px">
+            <!-- card -->
+            <button
+              class="card mb-1 border-0"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="row g-0">
+                <div class="col-md-3 d-flex justify-content-center border-0">
+                  <img src="./assets/images/tera-drone.png" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body d-flex align-items-start flex-column">
+                    <h5 class="card-title">Suspect ID:0</h5>
+                    <p class="card-text">Suspect Truck - Truck</p>
+                    <p class="card-text">Thursday 13/10/2002 - 14.22</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </button>
-          <!-- Modal -->
+            </button>
+            <button
+              class="card mb-1 border-0"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="row g-0">
+                <div class="col-md-3 d-flex justify-content-center border-0">
+                  <img src="./assets/images/tera-drone.png" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body d-flex align-items-start flex-column">
+                    <h5 class="card-title">Suspect ID:0</h5>
+                    <p class="card-text">Suspect Truck - Truck</p>
+                    <p class="card-text">Thursday 13/10/2002 - 14.22</p>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <button
+              class="card mb-1 border-0"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="row g-0">
+                <div class="col-md-3 d-flex justify-content-center border-0">
+                  <img src="./assets/images/tera-drone.png" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body d-flex align-items-start flex-column">
+                    <h5 class="card-title">Suspect ID:0</h5>
+                    <p class="card-text">Suspect Truck - Truck</p>
+                    <p class="card-text">Thursday 13/10/2002 - 14.22</p>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <button
+              class="card mb-1 border-0"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="row g-0">
+                <div class="col-md-3 d-flex justify-content-center border-0">
+                  <img src="./assets/images/tera-drone.png" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body d-flex align-items-start flex-column">
+                    <h5 class="card-title">Suspect ID:0</h5>
+                    <p class="card-text">Suspect Truck - Truck</p>
+                    <p class="card-text">Thursday 13/10/2002 - 14.22</p>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <button
+              class="card mb-1 border-0"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="row g-0">
+                <div class="col-md-3 d-flex justify-content-center border-0">
+                  <img src="./assets/images/tera-drone.png" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body d-flex align-items-start flex-column">
+                    <h5 class="card-title">Suspect ID:0</h5>
+                    <p class="card-text">Suspect Truck - Truck</p>
+                    <p class="card-text">Thursday 13/10/2002 - 14.22</p>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <button
+              class="card mb-1 border-0"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="row g-0">
+                <div class="col-md-3 d-flex justify-content-center border-0">
+                  <img src="./assets/images/tera-drone.png" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body d-flex align-items-start flex-column">
+                    <h5 class="card-title">Suspect ID:0</h5>
+                    <p class="card-text">Suspect Truck - Truck</p>
+                    <p class="card-text">Thursday 13/10/2002 - 14.22</p>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <button
+              class="card mb-1 border-0"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="row g-0">
+                <div class="col-md-3 d-flex justify-content-center border-0">
+                  <img src="./assets/images/tera-drone.png" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body d-flex align-items-start flex-column">
+                    <h5 class="card-title">Suspect ID:0</h5>
+                    <p class="card-text">Suspect Truck - Truck</p>
+                    <p class="card-text">Thursday 13/10/2002 - 14.22</p>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <button
+              class="card mb-1 border-0"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="row g-0">
+                <div class="col-md-3 d-flex justify-content-center border-0">
+                  <img src="./assets/images/tera-drone.png" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body d-flex align-items-start flex-column">
+                    <h5 class="card-title">Suspect ID:0</h5>
+                    <p class="card-text">Suspect Truck - Truck</p>
+                    <p class="card-text">Thursday 13/10/2002 - 14.22</p>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <button
+              class="card mb-1 border-0"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="row g-0">
+                <div class="col-md-3 d-flex justify-content-center border-0">
+                  <img src="./assets/images/tera-drone.png" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body d-flex align-items-start flex-column">
+                    <h5 class="card-title">Suspect ID:0</h5>
+                    <p class="card-text">Suspect Truck - Truck</p>
+                    <p class="card-text">Thursday 13/10/2002 - 14.22</p>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <!-- Modal -->
+          </div>
           <div
             class="modal fade"
             id="exampleModal"
@@ -331,7 +508,7 @@
             </div>
           </div>
           <!-- end card -->
-          <button type="button" class="btn btn-primary" id="myBtn">Button toast</button>
+          <button type="button" class="btn btn-dark" id="myBtn">Button toast</button>
         </section>
       </div>
     </div>

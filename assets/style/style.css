@@ -6,9 +6,9 @@ p {
   margin: 0;
 }
 
-body {
+/* body {
   background-color: #2596be;
-}
+} */
 
 ul,
 li {
@@ -17,4 +17,12 @@ li {
 
 .inputan {
   text-decoration: none;
+}
+
+.back-light {
+  background-color: white;
+}
+
+.back {
+  background-color: #24242c;
 }
