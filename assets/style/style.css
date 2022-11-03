@@ -24,5 +24,9 @@ li {
 }
 
 .back {
-  background-color: #24242c;
+  background-color: #649dbe;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }

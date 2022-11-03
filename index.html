@@ -17,31 +17,21 @@
     <link href="dist/css/videoplayer.min.css" rel="stylesheet" />
     <link href="source/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="container-sm mt-2">
-      <div class="toast position-fixed bottom-0 start-0 p-3" id="myToast" style="z-index: 50">
-        <!-- <div class="position-fixed"> -->
-        <div class="toast-header" style="z-index: 11; right: 0">
-          <strong class="me-auto"><i class="bi-gift-fill"></i> We miss you!</strong>
-          <small>10 mins ago</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-        </div>
-        <div class="toast-body" style="z-index: 11">
-          It's been a long time since you visited us. We've something special for you.
-          <a href="#">Click here!</a>
-        </div>
-        <!-- </div> -->
-      </div>
       <div class="d-flex gap-3">
         <div class=" " style="width: 70%">
           <section class="mb-2">
             <div class="text-center back">
-              <h3 class="text-light">VIDEO</h3>
+              <span class="text-light fs-4">Video</span>
             </div>
             <!-- Video Player START -->
             <div class="videoplayer" id="player-1">
-              <div class="ratio ratio-21x9 bg-dark">
+              <div class="ratio ratio-21x9">
                 <video
                   class="video"
                   src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4#t=9"
@@ -97,7 +87,7 @@
           </section>
           <section class="mb-3">
             <div class="text-center back">
-              <h3 class="text-light">Configuration</h3>
+              <span class="text-light fs-4">Configuration</span>
             </div>
             <div class="back-light p-2 rounded-3">
               <form class="inputan d-flex gap-2 flex-column">
@@ -283,19 +273,19 @@
                     />
                   </div>
                 </div>
-                <button type="button" class="btn btn-dark">Start Perdict</button>
+                <button type="button" class="btn btn-dark bold">Start Predict</button>
               </form>
             </div>
           </section>
         </div>
-        <section class="back-light p-2 rounded-3" style="width: 30%">
-          <div class="text-center back">
-            <h3 class="text-light">RESULT</h3>
+        <section class="back-light rounded-3" style="width: 30%">
+          <div class="text-center back mb-1">
+            <span class="text-light fs-4">Result</span>
           </div>
-          <div class="overflow-auto" style="height: 1000px">
+          <div class="overflow-auto" style="height: 1022px">
             <!-- card -->
             <button
-              class="card mb-1 border-0"
+              class="card mb-2 border-0"
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
@@ -314,7 +304,7 @@
               </div>
             </button>
             <button
-              class="card mb-1 border-0"
+              class="card mb-2 border-0"
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
@@ -333,7 +323,7 @@
               </div>
             </button>
             <button
-              class="card mb-1 border-0"
+              class="card mb-2 border-0"
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
@@ -352,7 +342,7 @@
               </div>
             </button>
             <button
-              class="card mb-1 border-0"
+              class="card mb-2 border-0"
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
@@ -371,7 +361,7 @@
               </div>
             </button>
             <button
-              class="card mb-1 border-0"
+              class="card mb-2 border-0"
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
@@ -390,7 +380,7 @@
               </div>
             </button>
             <button
-              class="card mb-1 border-0"
+              class="card mb-2 border-0"
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
@@ -409,7 +399,7 @@
               </div>
             </button>
             <button
-              class="card mb-1 border-0"
+              class="card mb-2 border-0"
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
@@ -428,7 +418,7 @@
               </div>
             </button>
             <button
-              class="card mb-1 border-0"
+              class="card mb-2 border-0"
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
@@ -447,7 +437,7 @@
               </div>
             </button>
             <button
-              class="card mb-1 border-0"
+              class="card mb-2 border-0"
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
@@ -508,24 +498,10 @@
             </div>
           </div>
           <!-- end card -->
-          <button type="button" class="btn btn-dark" id="myBtn">Button toast</button>
         </section>
       </div>
     </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var btn = document.getElementById("myBtn");
-        var element = document.getElementById("myToast");
-
-        // Create toast instance
-        var myToast = new bootstrap.Toast(element);
-
-        btn.addEventListener("click", function () {
-          myToast.show();
-        });
-      });
-    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
