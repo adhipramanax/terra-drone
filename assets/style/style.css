@@ -30,3 +30,14 @@ li {
 body {
   font-family: "Titillium Web", sans-serif;
 }
+
+.btn-start {
+  background-color: #649dbe;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-start:hover {
+  color: white;
+  background-color: #588ba9;
+}
